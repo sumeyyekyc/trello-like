@@ -1,14 +1,14 @@
 <?php
-// Informations d'identification
+// CREDENTICALS FOR THE SERVER
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_NAME', 'do_done');
  
-// Connexion à la base de données MySQL 
+// MySQL CONNECTION
 $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
  
-// Vérifier la connexion
+// IF ERROR : SEND THE ERROR 
 if($conn === false){
     die("ERREUR : Impossible de se connecter. " . mysqli_connect_error());
 }
