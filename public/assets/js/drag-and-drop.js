@@ -1,4 +1,4 @@
-const draggables = document.querySelectorAll('.card')
+const draggables = document.querySelectorAll('.draggable')
 const containers = document.querySelectorAll('.list-container')
 
 draggables.forEach(draggable => {
@@ -11,15 +11,15 @@ draggables.forEach(draggable => {
   })
 })
 
-containers.forEach(card => {
-  card.addEventListener('dragover', e => {
+containers.forEach(container => {
+  container.addEventListener('dragover', e => {
     e.preventDefault()
-    const afterElement = getDragAfterElement(card, e.clientY)
+    const afterElement = getDragAfterElement(container, e.clientY)
     const draggable = document.querySelector('.dragging')
     if (afterElement == null) {
-      card.appendChild(draggable)
+      container.appendChild(draggable)
     } else {
-      card.insertBefore(draggable, afterElement)
+      container.insertBefore(draggable, afterElement)
     }
   })
 })

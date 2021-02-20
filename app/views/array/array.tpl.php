@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doing Done</title>
-    <link rel="stylesheet" href="../../public/assets/css/reset.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../public/assets/css/style.css">
-</head>
-
-<body>
-    <header>
-        <nav>
-            <img id="logo" src="../../public/assets/images/logo_DoingDone.png">
-            <div id="nav-link">
-                <a class="nav-link" href="#"><img class="nav-img" src="../../public/assets/images/home.png"> Accueil</a>
-                <a class="nav-link" href="#"><img class="nav-img" src="../../public/assets/images/array.png"> Tableaux</a>
-                <a class="nav-link" href="#"><img class="nav-img" src="../../public/assets/images/user-shape.png"> Mon compte</a>
-            </div>
-        </nav>
-    </header>
-
-    <div id="container-of-everything">
+<div id="container-of-everything">
 
         <div class="container-div" id="side-bar">
             <a id="button" href=""><i class="fas fa-plus" id="img-button"></i> Créer un projet</a>
@@ -81,32 +57,3 @@
         </div>
 
     </div>
-
-    <footer>
-        <div id="footer-link">
-            <div id="left-side">
-                <ul>
-                    <li><a class="footer-link-all" href="">mentions légales</a></li>
-                    <li><a class="footer-link-all" href="">confidentialité</a></li>
-                    <li><a class="footer-link-all" href="">cgu</a></li>
-                </ul>
-                <ul>
-                    <li><a class="footer-link-all" href="">contact</a></li>
-                    <li><a class="footer-link-all" href="">à propos</a></li>
-                </ul>
-            </div>
-            <div id="social-group">
-                <a class="footer-link-all" href=""><i class="fab fa-facebook-f fa-2x"></i></a>
-                <a class="footer-link-all" href=""><i class="fab fa-github fa-2x"></i></a>
-                <a class="footer-link-all" href=""><i class="fab fa-youtube fa-2x"></i></a>
-            </div>
-        </div>
-        <p>copyright © 2021 | doing done. all right reserved.</p>
-    </footer>
-        <script type="text/javascript" src="../../public/assets/js/drag-and-drop.js"></script>
-        <script type="text/javascript" src="../../public/assets/js/add.js"></script>
-        <script type="text/javascript" src="../../public/assets/js/edit.js"></script>
-        <script type="text/javascript" src="../../public/assets/js/remove.js"></script>
-</body>
-
-</html>
