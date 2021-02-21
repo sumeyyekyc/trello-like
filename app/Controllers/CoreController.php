@@ -4,47 +4,6 @@ namespace App\Controllers;
 
 class CoreController {
 
-  public static function checkAuthorization( $roles = [] )
-  {
-      global $router;
-
-      // Vérifier qu'un utilisateur est connecté
-      // on pourrait aussi vérifier que $_SESSION['user'] contient
-      // bien une instance de l'objet AppUser (grace à instanceof)
-      // @see https://www.php.net/manual/fr/language.operators.type.php
-      if( isset( $_SESSION['user'] ) )
-      {
-          // On récupère les infos grace à $_SESSION['user']
-          // et plus particulièrement son rôle
-          $userRole = $_SESSION['user']->getRole();
-
-          // On vérifie si le role de l'utilisateur est présent
-          // dans le tableau $roles passé en paramètre
-          if( in_array( $userRole, $roles ) )
-          {
-              // Si le rôle fait partie des roles autorisés
-              // On retourne true et on laisse le code de la page
-              // s'éxecuter, et la view s'afficher
-              return true;
-          }
-          else
-          {
-              // Sinon, on affiche un message d'erreur (ex erreur 403)
-              // Et surtout, on quitte le script (ou on redirige)
-              // Pour s'assurer que l'utilisateur n'accède pas
-              // à la page, grace a exit()
-              echo "Vous n'avez pas le droit d'accéder à cette page !";
-              exit();
-          }
-      }
-      // Sinon, rediriger vers la page de connexion
-      else
-      {
-          header( "Location: ".$router->generate( 'login' ) );
-          exit();
-      }
-  }
-
     /**
      * Méthode permettant d'afficher du code HTML en se basant sur les views
      *

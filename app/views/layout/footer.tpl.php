@@ -20,10 +20,10 @@
     </div>
     <p>copyright © 2021 | doing done. all right reserved.</p>
 </footer>
-    <script type="text/javascript" src="../../public/assets/js/drag-and-drop.js"></script>
-    <script type="text/javascript" src="../../public/assets/js/add.js"></script>
-    <script type="text/javascript" src="../../public/assets/js/edit.js"></script>
-    <script type="text/javascript" src="../../public/assets/js/remove.js"></script>
+    <script type="text/javascript" src="../public/assets/js/drag-and-drop.js"></script>
+    <script type="text/javascript" src="../public/assets/js/add.js"></script>
+    <script type="text/javascript" src="../public/assets/js/edit.js"></script>
+    <script type="text/javascript" src="../public/assets/js/remove.js"></script>
 </body>
 
 </html>

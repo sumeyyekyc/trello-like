@@ -1,18 +1,18 @@
 <div id="container-of-everything">
 
         <div class="container-div" id="side-bar">
-            <a id="button" href=""><i class="fas fa-plus" id="img-button"></i> Créer un projet</a>
+            <p id="button"><i class="fas fa-plus" id="img-button" onclick="addList(this)"></i> Créer un projet</p>
             <h2 id="title-projet-side-bar">Mes projets</h2>
             <ul>
-                <li class="project-list"><a id="link_list" href="">- [Title to dynamize]</a></li>
+                <li class="project-list"><p id="link_list">- [Title to dynamize]</p></li>
             </ul>
         </div>
         <!-- central part of the project : where the name and card goes -->
         <div class="container-div" id="project">
             <div id="title">
                 <h1>Projet 1</h1>
-                <a href="" class="button-project"><i class="fas fa-plus img-button-project"></i> Ajouter une liste</a>
-                <a href="" class="button-project" id="button-project__second-lign"><img class="img-button-project" id="img-calendar" src="../../public/assets/images/calendar.png"> Calendrier</a>
+                <p onclick="editth(this.parentNode)" onchange="editth(this.parentNode)" class="button-project"><i class="fas fa-plus img-button-project"></i> Ajouter une liste</p>
+                <p class="button-project" id="button-project__second-lign"><img class="img-button-project" id="img-calendar" src="../public/assets/images/calendar.png"> Calendrier</p>
             </div>
 
             <!-- The part where one list goes -->

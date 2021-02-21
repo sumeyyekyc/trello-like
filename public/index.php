@@ -39,18 +39,10 @@ else {
 /*----------- MAIN ----------------- */
 
 $router->map( 'GET',  '/',           '\App\Controllers\MainController::home',    'main-home');
-$router->map( 'GET',  '/login',      '\App\Controllers\MainController::login',   'appuser'  );
-$router->map( 'POST', '/login',      '\App\Controllers\MainController::connect', 'login'   );
-$router->map( 'GET',  '/logout',     '\App\Controllers\MainController::logout',  'main-logout');
 
-/*-----------USER----------------------*/
+/*----------- ARRAY PAGE ----------------- */
 
-$router->map( 'GET',  '/user',                  '\App\Controllers\UserController::list',    'user-list');
-$router->map('GET',   '/user-add',              '\App\Controllers\UserController::add',     'add-user');
-$router->map('POST',  '/user-add',              '\App\Controllers\UserController::create',  'create-user');
-$router->map('GET',   '/user-update/[i:id]',    '\App\Controllers\UserController::update',  'update-user');
-$router->map('POST',  '/user-update/[i:id]',    '\App\Controllers\UserController::edit',    'edit-user');
-$router->map('GET',   '/user-delete/[i:id]',    '\App\Controllers\UserController::delete',  'delete-user');
+$router->map( 'GET',  '/array',           '\App\Controllers\ArrayController::display',    'array-display');
 
 /* -------------
 --- DISPATCH ---
