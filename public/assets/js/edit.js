@@ -9,6 +9,6 @@ function editth(x){
     } else {
       x.getElementsByClassName("x")[0].style.display = "none";
       x.getElementsByClassName("xtext")[0].style.display = "block";
-      x.getElementsByClassName("xtext")[0].innerHTML = x.getElementsByClassName("x")[0].value;
+      x.getElementsByClassName("xtext")[0].innerHTML = x.getElementsByClassName("xtext")[0].value;
     }
   }

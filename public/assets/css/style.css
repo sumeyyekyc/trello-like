@@ -86,6 +86,7 @@ img {
     font-weight: bold;
     font-size: 1em;
     padding: 0 1em 0 1em;
+    margin: 0;
     cursor:pointer;
 }
 
@@ -113,6 +114,10 @@ img {
     align-items: center;
     padding-right: 1em;
     cursor:pointer;
+}
+
+ul {
+    margin: 0;
 }
 
 .project-list:hover {
@@ -154,8 +159,8 @@ h1 {
 }
 
 .button-project {
-    width: 16%;
-    height: 30%;
+    width: 200px;
+    height: 40px;
     font-weight: bold;
     background-color: white;
     text-decoration: none;
@@ -178,7 +183,7 @@ h1 {
 
 #button-project__second-lign {
     padding-right: 0px;
-    width: 12%;
+    width: 150px;;
 }
 
 
@@ -216,11 +221,13 @@ h1 {
     height: 2em;
     color: white;
     font-size: 2em;
+    padding-bottom: 0.5em;
 }
 
 .header-list-title {
     text-align: center;
     padding-top: 0.5em;
+    margin: 0;
 }
 
 .title-draw {
@@ -252,12 +259,21 @@ h3 {
     padding-top: 1em;
 }
 
-.card-pen {
+.remove {
     font-size: 1.2em;
     position: relative;
-    top: 65px;
+    top: -40px;
     left: 290px;
     color: black;
+    background: #fafafa; 
+    box-shadow: 0 2px 2px rgba(123,123,123,0.4);
+    border-radius: 5px; 
+    width: 30px;
+    font-size: 25px; 
+    line-height: 20px; 
+    right: 5px; 
+    text-align: center;
+    cursor: pointer;
 }
 
 .add-card-div {
@@ -280,22 +296,7 @@ h3 {
     color: white;
     padding-right: 1em;
 }
-.remove { 
-    top: calc(50% - 10px); 
-    font-size: 20px; 
-    line-height: 20px; 
-    right: 5px; 
-    color: #777; 
-    cursor: pointer;
-     user-select: none; 
-     z-index: 1; 
-     display: none; 
-     background: #fafafa; 
-     box-shadow: 0 2px 2px rgba(123,123,123,0.4);
-      border-radius: 5px; 
-      width: 20px; 
-      text-align: center;
-     }
+
 
 /*------------------FOOTER---------------------- */
 

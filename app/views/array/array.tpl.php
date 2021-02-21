@@ -19,36 +19,48 @@
             <div class="container-project">
                 <div class="list-container">
                     <div class="list-title">
-                        <h2 class="header-list-title">À faire </h2>
-                        <p onclick="editth(this.parentNode)" onchange="editth(this.parentNode)"><i class="fas fa-pen title-draw"></i></p>
+                        <h2 class="header-list-title" onclick="editth(this.parentNode)" onchange="editth(this.parentNode)">To do</h2>
                     </div>
                     <div class="add-card-div" onclick="add(this)">
                         <i class="fas fa-plus plus"></i><p class="add-card">Ajouter une carte</p> 
                     </div>
 
                     <div class="card draggable dragging" draggable="true">
-                        <h3 onclick="editth(this.parentNode)">Nom de la tâche</h3>
-                        <p class="x" onclick="editth(this.parentNode)" onchange="editth(this.parentNode)"></p>
-                        <div class="remove" onclick="removeth(this)">x</div>
-                        <i class="fas fa-pen card-pen" onclick="editth(this)"></i>
+                        <h3 class="x" onclick="editth(this.parentNode)">Nom de la tâche</h3>
+                        <p class="xtext" onclick="editth(this.parentNode)" onchange="editth(this.parentNode)"></p>
+                        <div class="remove" onclick="removeth(this)"><i class="fas fa-times"></i></div>
                     </div>
                     
                 </div>
 
                 <div class="list-container">
                     <div class="list-title">
-                        <h2 class="header-list-title">À faire </h2>
-                        <p onclick="editth(this.parentNode)" onchange="editth(this.parentNode)"><i class="fas fa-pen title-draw"></i></p>
+                        <h2 class="header-list-title" onclick="editth(this.parentNode)" onchange="editth(this.parentNode)">Doing</h2>
                     </div>
                     <div class="add-card-div" onclick="add(this)">
                         <i class="fas fa-plus plus"></i><p class="add-card">Ajouter une carte</p> 
                     </div>
 
-                    <div class="card draggable" draggable="true">
-                        <h3 onclick="editth(this.parentNode)">Nom de la tâche</h3>
-                        <p class="x" onclick="editth(this.parentNode)" onchange="editth(this.parentNode)"></p>
-                        <div class="remove" onclick="removeth(this)">x</div>
-                        <i class="fas fa-pen card-pen" onclick="editth(this)"></i>
+                    <div class="card draggable dragging" draggable="true">
+                        <h3 class="x" onclick="editth(this.parentNode)">Nom de la tâche</h3>
+                        <p class="xtext" onclick="editth(this.parentNode)" onchange="editth(this.parentNode)"></p>
+                        <div class="remove" onclick="removeth(this)"><i class="fas fa-times"></i></div>
+                    </div>
+                    
+                </div>
+
+                <div class="list-container">
+                    <div class="list-title">
+                        <h2 class="header-list-title" onclick="editth(this.parentNode)" onchange="editth(this.parentNode)">Done</h2>
+                    </div>
+                    <div class="add-card-div" onclick="add(this)">
+                        <i class="fas fa-plus plus"></i><p class="add-card">Ajouter une carte</p> 
+                    </div>
+
+                    <div class="card draggable dragging" draggable="true">
+                        <h3 class="x" onclick="editth(this.parentNode)">Nom de la tâche</h3>
+                        <p class="xtext" onclick="editth(this.parentNode)" onchange="editth(this.parentNode)"></p>
+                        <div class="remove" onclick="removeth(this)"><i class="fas fa-times"></i></div>
                     </div>
                     
                 </div>
